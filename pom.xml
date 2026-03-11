@@ -10,9 +10,9 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 <name>Java Home myweb</name> <url>http://maven.apache.org</url>
 
 <properties>
-    <docker.image.prefix>kammana</docker.image.prefix>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+<docker.image.prefix>kammana</docker.image.prefix>
+<maven.compiler.source>1.8</maven.compiler.source>
+<maven.compiler.target>1.8</maven.compiler.target>
 </properties>
 
 <dependencies>
@@ -70,6 +70,12 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 <target>1.8</target>
 </configuration>
 
+</plugin>
+
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-war-plugin</artifactId>
+<version>3.3.2</version>
 </plugin>
 
 </plugins>
